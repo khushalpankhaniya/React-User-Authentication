@@ -24,7 +24,7 @@ const Home = () => {
         localStorage.setItem('userInformation', JSON.stringify(data.userData));
         setuserInfo(JSON.parse(localStorage.getItem('userInformation') ?? '{}'));
       })
-      .catch((error) => console.error('Error fetching products:', error));
+      .catch((error) => console.error('Error fetching data:', error));
   }, []);
 
   const handleLogout = () => {
